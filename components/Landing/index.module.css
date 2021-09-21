@@ -1,0 +1,123 @@
+.landing {
+  padding-top: 94px;
+  height: 995px;
+  text-align: center;
+  background-image: url("../../assets/bg1.png");
+  background-size: cover;
+}
+
+.slogan {
+  padding: 0 45px;
+}
+
+.slogan_tips {
+  padding: 0 55px;
+}
+
+.progress {
+  margin-bottom: 16px;
+  padding: 8px 45px 0;
+  position: relative;
+  height: 50px;
+}
+
+.progress_cursor_container {
+  width: 100%;
+  height: 36px;
+  position: relative;
+  top: 0;
+}
+
+.progress_cursor {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 120px;
+  height: 26px;
+  border-bottom: 1.5px solid rgb(142, 113, 62);
+  font-size: 15px;
+  color: rgb(142, 113, 62);
+  transition: left .3s, transform .3s;
+}
+
+.progress_icon_money {
+  margin-right: 4px;
+  width: 20px;
+  height: 20px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid rgb(142, 113, 62);
+  color: rgb(142, 113, 62);
+  font-size: 12px;
+}
+
+.progress_bar_bg,
+.progress_bar {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.progress_bar_bg {
+  height: 8px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(254, 206, 97, 0.8), rgba(0, 0, 0, 0));
+}
+
+.progress_bar {
+  padding-top: 1px;
+  height: 6px;
+  /* bottom: 1px; */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(80, 80, 80, 0.5), rgba(0, 0, 0, 0));
+}
+
+.progress_bar_line {
+  position: relative;
+  min-width: 2%;
+  height: 6px;
+  border-radius: 0 4px 4px 0;
+  border-right: 2px solid rgba(255, 166, 83, 0.6);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(197, 78, 45, 0.5), rgba(227, 84, 68, 0.8), rgba(250, 115, 43, 0.8));
+  transition: width .3s;
+}
+
+.progress_bar_spot {
+  position: absolute;
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 223, 142, 0.4);
+}
+
+.progress_bar_spot::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: rgba(255, 220, 129, 1);
+}
+
+.progress_bar_spot::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  transform: translateX(-50%);
+  left: 50%;
+  border-top: 5px solid rgb(142, 113, 62);
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+  /* background-color: rgb(142, 113, 62); */
+}
+
+.btn_start {
+  margin-bottom: 194px;
+  width: 210px;
+  display: inline-block;
+}

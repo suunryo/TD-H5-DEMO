@@ -1,0 +1,22 @@
+.op_button {
+  width: 142px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  color: rgb(243, 220, 172);
+}
+
+.op_button_red {
+  background-image: url("../../assets/btn-r.png");
+}
+
+.op_button_blue {
+  background-image: url("../../assets/btn-b.png");
+}
+
+.op_button_sub_text {
+  font-size: 10px;
+}

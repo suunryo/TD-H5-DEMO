@@ -1,0 +1,53 @@
+.game_info {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 310px;
+  height: 286px;
+}
+
+.avatar {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.5px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  border: 2.5px solid rgb(152, 131, 74);
+  background-color: rgb(243, 207, 138);
+}
+
+.avatar_img {
+  border-radius: 50%;
+}
+
+.bind {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 106px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 12px;
+  color: rgb(109, 81, 50);
+  font-size: 12px;
+}
+
+.icon_info {
+  margin-right: 2.5px;
+  width: 12px;
+  height: 12px;
+}
+
+.get_cash {
+  position: absolute;
+  top: 214px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 186px;
+  height: 62px;
+  background-color: transparent;
+  border: none;
+}

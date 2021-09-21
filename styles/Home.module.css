@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  height: 94px;
+  position: absolute;
+  z-index: 9;
+}
+
+.icon_game {
+  position: absolute;
+  top: 27px;
+  left: 18px;
+}
+.icon_wechat {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}

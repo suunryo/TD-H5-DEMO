@@ -1,0 +1,24 @@
+.mission {
+  padding-top: 150px;
+  height: 1008px;
+  text-align: center;
+  background-image: url("../../assets/bg2.png");
+  background-size: cover;
+  position: relative;
+}
+
+.mission_title {
+  position: absolute;
+  top: 65px;
+  right: 40px;
+  width: 173px;
+  height: 65px;
+}
+
+.mission_list {
+  padding-left: 15px;
+}
+
+.mission_item_bonus {
+  color: rgb(206, 57, 57);
+}

@@ -1,0 +1,12 @@
+.log_btn {
+  display: flex;
+  align-items: center;
+  /* width: 96px; */
+  height: 37.5px;
+  font-size: 12px;
+  color: rgb(248, 227, 186);
+}
+
+.log_btn_icon {
+  margin-right: 5px;
+}

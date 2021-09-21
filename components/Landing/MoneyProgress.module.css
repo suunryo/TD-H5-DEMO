@@ -1,0 +1,47 @@
+.money_progress {
+  position: absolute;
+  top: 174px;
+  left: 50%;
+  width: 105%;
+  height: 9px;
+  transform: translateX(-50%);
+  border-radius: 4.5px;
+  border: 1.5px solid #fff;
+  background-color: rgb(216, 228, 231);
+}
+
+.money_progress_line {
+  min-width: 2%;
+  height: 6.5px;
+  border-radius: 3.25px;
+  background-image: linear-gradient(to right, rgb(255, 214, 86), rgb(255, 208, 78),  rgb(255, 152, 31));
+}
+
+.money_progress_spot {
+  position: absolute;
+}
+
+.money_progress_spot::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  transform: translateX(-100%);
+  left: 0%;
+  border-top: 5px solid rgb(255, 255, 255, 0.4);
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+  /* background-color: rgb(142, 113, 62); */
+}
+
+.money_progress_tips {
+  position: absolute;
+  top: -40px;
+  width: 240px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 14px;
+  box-shadow: inset 0px 0px 4px 1px #fff;
+  font-size: 16px;
+  color: rgb(109, 81, 50);
+  background-color: rgba(255, 255, 255, 0.4);
+}
