@@ -9,6 +9,7 @@
 
 .bind_info_title {
     margin-bottom: 18px;
+    text-align: center;
     font-size: 16px;
     color: #fff;
 }
@@ -16,4 +17,8 @@
 .bind_info_form {
     padding: 0 44px;
     margin-bottom: 30px;
+}
+
+.bind_info_actions {
+    text-align: center;
 }

@@ -4,6 +4,7 @@ import MoneyProgress from "./MoneyProgress";
 import BindInfo from "../BindInfo";
 import PNG_GAMEINFO_BG from "../../assets/game-info.png"
 import PNG_PROFILE from "../../assets/profile.png"
+import PNG_WITHDRAW from "../../assets/withdraw.png"
 import styles from "./GameInfo.module.css";
 
 const GameInfo = () => {
@@ -23,7 +24,9 @@ const GameInfo = () => {
 				<span>绑定游戏账号信息</span>
 			</div>
 			<MoneyProgress />
-			<button className={styles.get_cash}></button>
+			<button className={styles.get_cash}>
+				<Image src={PNG_WITHDRAW} alt="" width={183} height={60} layout="responsive" />
+			</button>
 			<BindInfo visible={visible} onClose={() => setVisible(false)} />
 		</div>
 	)
