@@ -1,0 +1,19 @@
+.bind_info {
+    padding: 45px 0 27px;
+    width: 330px;
+    height: 357px;
+    background-image: url("../../assets/modal-bg-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bind_info_title {
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.bind_info_form {
+    padding: 0 44px;
+    margin-bottom: 30px;
+}

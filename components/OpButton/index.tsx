@@ -4,7 +4,8 @@ import styles from "./index.module.css";
 interface OpButtonProps {
   text: string;
   subText?: string | JSX.Element;
-  mode: "red" | "blue"
+  styles?: React.CSSProperties;
+  mode: "red" | "blue" | "yellow"
 }
 const OpButton: React.FC<OpButtonProps> = (props) => {
 
@@ -22,6 +23,9 @@ const OpButton: React.FC<OpButtonProps> = (props) => {
       case "blue":
         return styles.op_button_blue
         break;
+      case "yellow":
+        return styles.op_button_yellow
+        break;
       default: styles.op_button_red
         break;
     }
@@ -30,6 +34,7 @@ const OpButton: React.FC<OpButtonProps> = (props) => {
   return (
     <button
       className={`${styles.op_button} ${getClsByMode()}`}
+      style={props.styles}
     >
       <div>{text}</div>
       {subText && <span className={styles.op_button_sub_text}>{subText}</span>}

@@ -17,6 +17,10 @@
   background-image: url("../../assets/btn-b.png");
 }
 
+.op_button_yellow {
+  background-image: url("../../assets/btn-y.png");
+}
+
 .op_button_sub_text {
   font-size: 10px;
 }
