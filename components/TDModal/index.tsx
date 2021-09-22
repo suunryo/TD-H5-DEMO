@@ -1,4 +1,5 @@
 import React, { ReactElement } from "react";
+import ReactDOM from "react-dom";
 import Image from "next/image";
 import ICON_CLOSE from "../../assets/close.png";
 import styles from "./index.module.css";
@@ -23,8 +24,8 @@ const TDModal: React.FC<TDModalProps> = (props) => {
         return null;
     }
 
-    return (
-        <div className={styles.modal_wrapper}>
+    return ReactDOM.createPortal(
+        (<div className={styles.modal_wrapper}>
             <div
                 className={styles.modal_content}
                 style={{top: typeof top === "number" ? top + "px" : top}}
@@ -34,7 +35,8 @@ const TDModal: React.FC<TDModalProps> = (props) => {
                     <Image src={ICON_CLOSE} alt="" width={57} height={40} layout="responsive" />
                 </div>
             </div>
-        </div>
+        </div>),
+        document.body
     )
 };
 

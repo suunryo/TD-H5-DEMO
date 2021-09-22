@@ -22,9 +22,9 @@ const GameInfo = () => {
 				</div>
 				<span>绑定游戏账号信息</span>
 			</div>
-			<BindInfo visible={visible} onClose={() => setVisible(false)} />
 			<MoneyProgress />
 			<button className={styles.get_cash}></button>
+			<BindInfo visible={visible} onClose={() => setVisible(false)} />
 		</div>
 	)
 }

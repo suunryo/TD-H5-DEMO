@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styles from "./MoneyProgress.module.css";
 
-const MoneyProgress = () => {
+const MoneyProgress = (props: {style?: React.CSSProperties}) => {
 
   const [percent, setPercent] = useState<string>("30%")
 
   return (
-    <div className={styles.money_progress}>
+    <div className={styles.money_progress} style={props.style}>
       <div style={{width: percent}} className={styles.money_progress_line}>
         <div style={{left: percent}} className={styles.money_progress_spot}></div>
       </div>
