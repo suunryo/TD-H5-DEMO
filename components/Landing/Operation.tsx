@@ -1,9 +1,7 @@
 import React from "react";
-import Image from "next/image";
 import OpButton from "../OpButton";
-import LogButton from "../LogButton";
-import ICON_FRIENDS from "../../assets/friends.png";
-import ICON_CASHLOG from "../../assets/money.png";
+import InviteLog from "../InviteLog";
+import GetCashLog from "../GetCashLog";
 import styles from "./Operation.module.css";
 
 const Operation = () => {
@@ -23,15 +21,9 @@ const Operation = () => {
         />
       </div>
       <div className={styles.operation_log}>
-        <LogButton
-          icon={<Image src={ICON_FRIENDS} alt="好友邀请记录" width={19} height={19} />}
-          text="好友邀请记录"
-        />
+        <InviteLog />
         <div className={styles.operation_log_divider} />
-        <LogButton
-          icon={<Image src={ICON_CASHLOG} alt="获取现金记录" width={19} height={19} />}
-          text="获取现金记录"
-        />
+        <GetCashLog />
       </div>
     </div>
   )

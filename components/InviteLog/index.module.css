@@ -1,0 +1,113 @@
+.invite_log {
+    padding-top: 40px;
+    width: 330px;
+    height: 445px;
+    background-image: url("../../assets/modal-bg-2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.invite_log_progress {
+    margin-bottom: 14px;
+    line-height: 1;
+    font-size: 40px;
+    color: rgb(153, 40, 40);
+}
+
+.invite_log_progress_cur {
+    color: rgb(255, 212, 84);
+}
+
+.invite_log_progress_tips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 44px;
+    font-size: 14px;
+    color: rgb(255, 242, 214);
+}
+
+.invite_log_table {
+    padding: 0 18px;
+    margin-bottom: 20px;
+}
+
+.invite_log_table_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invite_log_table_header {
+    padding: 6px 0;
+    border-bottom: 1px solid rgb(246, 240, 236);
+}
+
+.invite_log_table_body {
+    height: 140px;
+    overflow: auto;
+    font-size: 10px;
+    color: rgb(119, 38, 38);
+}
+
+.table_header_col {
+    flex: 1;
+}
+
+.table_body_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid rgb(246, 240, 236);
+}
+
+.table_body_row > div,
+.table_body_row > time {
+    flex: 1;
+}
+
+.table_header_content {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 19px;
+    font-size: 12px;
+    color: rgb(121, 104, 104);
+    background-color: rgb(246, 240, 236);
+}
+
+.table_login_days {
+    font-size: 14px;
+}
+
+.table_user_info {
+    display: flex;
+    align-items: center;
+}
+
+.table_user_info_avatar {
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgb(210, 186, 119)
+}
+
+.table_user_info_avatar img {
+    border-radius: 50%;
+}
+
+.table_user_info_nickname {
+    width: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.invite_log_btn {
+    margin-bottom: 13px;
+}
+
+.invite_log_tips {
+    font-size: 12px;
+    color: rgb(121, 104, 104);
+}
