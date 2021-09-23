@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Image from "next/image";
+import PNG_BG from "../../assets/modal-bg-1.png"
 import TDSelect, { TDOption } from "../TDSelect";
 import TDModal, { TDModalProps } from "../TDModal";
 import styles from "./index.module.css";
@@ -51,6 +53,11 @@ const BindInfo: React.FC<BindInfoProps> = (props) => {
             top={120}
             visible={props.visible}
             onClose={props.onClose}
+            background={
+                <div className={styles.bind_info_bg}>
+                    <Image src={PNG_BG} alt="" width={330} height={357} layout="responsive" />
+                </div>
+            }
         >
             <div className={styles.bind_info}>
                 <div className={styles.bind_info_title}>

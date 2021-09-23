@@ -5,6 +5,7 @@ import TDModal from "../TDModal";
 import BindInfo from "../BindInfo";
 import LogList from "./LogList";
 import MoneyProgress from "../Landing/MoneyProgress";
+import PNG_BG from "../../assets/modal-bg-3.png"
 import ICON_CASHLOG from "../../assets/money.png";
 import PNG_PROFILE from "../../assets/profile.png"
 import PNG_COMPLETE from "../../assets/complete.png"
@@ -26,6 +27,11 @@ const GetCashLog = () => {
                 // top="15%"
                 visible={visible}
                 onClose={() => setVisible(false)}
+                background={
+                    <div className={styles.get_cash_log_bg}>
+                        <Image src={PNG_BG} alt="" width={330} height={475} layout="responsive" />
+                    </div>
+                }
             >
                 <div className={styles.get_cash_log}>
                     <div className={styles.avatar}>

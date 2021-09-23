@@ -7,7 +7,7 @@ import styles from "./Operation.module.css";
 const Operation = () => {
 
   return (
-    <div>
+    <div className={styles.operation}>
       <div className={styles.operation_btn}>
         <OpButton
           text="邀请好友"

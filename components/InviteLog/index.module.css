@@ -2,9 +2,15 @@
     padding-top: 40px;
     width: 330px;
     height: 445px;
-    background-image: url("../../assets/modal-bg-2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
+}
+
+.invite_log_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: 445px;
 }
 
 .invite_log_progress {

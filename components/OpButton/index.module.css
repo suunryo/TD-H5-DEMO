@@ -2,25 +2,25 @@
   width: 142px;
   height: 50px;
   border: none;
+  position: relative;
   background-color: transparent;
-  background-size: contain;
-  background-repeat: no-repeat;
   font-size: 16px;
   color: rgb(243, 220, 172);
 }
 
-.op_button_red {
-  background-image: url("../../assets/btn-r.png");
+.op_button_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 142px;
+  height: 50px;
 }
 
-.op_button_blue {
-  background-image: url("../../assets/btn-b.png");
-}
-
-.op_button_yellow {
-  background-image: url("../../assets/btn-y.png");
+.op_button_text {
+  position: relative;
 }
 
 .op_button_sub_text {
+  position: relative;
   font-size: 10px;
 }

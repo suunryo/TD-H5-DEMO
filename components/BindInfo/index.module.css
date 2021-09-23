@@ -2,9 +2,15 @@
     padding: 45px 0 27px;
     width: 330px;
     height: 357px;
-    background-image: url("../../assets/modal-bg-1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bind_info_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: 357px;
 }
 
 .bind_info_title {

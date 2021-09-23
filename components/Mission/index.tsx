@@ -2,6 +2,7 @@ import React, { ReactElement } from "react";
 import Image from "next/image";
 import MissionItem from "./MissionItem";
 import Rules from "./Rules";
+import PNG_BG from "../../assets/bg2.png"
 import ICON_MISSION from "../../assets/mission-icon.png"
 import styles from "./index.module.css";
 
@@ -53,6 +54,9 @@ const Mission = () => {
 
   return (
     <div className={styles.mission}>
+      <div className={styles.mission_bg}>
+        <Image src={PNG_BG} alt="" width={375} height={1008} layout="responsive" />
+      </div>
       <div className={styles.mission_title}>
         <Image src={ICON_MISSION} alt="现金任务" width={173} height={65} layout="responsive" />
       </div>

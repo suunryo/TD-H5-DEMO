@@ -2,9 +2,15 @@
   padding-top: 150px;
   height: 1008px;
   text-align: center;
-  background-image: url("../../assets/bg2.png");
-  background-size: cover;
   position: relative;
+}
+
+.mission_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1008px;
 }
 
 .mission_title {

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Progress from "./Progress";
 import GameInfo from "./GameInfo";
 import Operation from "./Operation";
+import PNG_BG from "../../assets/bg1.png";
 import PNG_SLOGAN from "../../assets/slogan.png"
 import PNG_SLOGAN_TIPS from "../../assets/slogan-tips.png"
 import PNG_START from "../../assets/start.png"
@@ -12,6 +13,9 @@ const Landing = () => {
 
   return (
     <div className={styles.landing}>
+      <div className={styles.landing_bg}>
+        <Image src={PNG_BG} alt="" width={375} height={995} layout="responsive" />
+      </div>
       <div className={styles.slogan}>
         <Image src={PNG_SLOGAN} alt="[天刀第一期]总奖池100万 等你瓜分" width={284} height={130} layout="responsive" />
       </div>

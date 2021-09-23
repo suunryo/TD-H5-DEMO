@@ -1,4 +1,8 @@
 import React from "react";
+import Image from "next/image";
+import BG_RED from "../../assets/btn-r.png";
+import BG_BLUE from "../../assets/btn-b.png";
+import BG_YELLOW from "../../assets/btn-y.png";
 import styles from "./index.module.css";
 
 interface OpButtonProps {
@@ -15,28 +19,28 @@ const OpButton: React.FC<OpButtonProps> = (props) => {
     mode = "red"
   } = props;
 
-  const getClsByMode = () => {
+  const getButtonBg = () => {
     switch (mode) {
       case "red":
-        return styles.op_button_red
-        break;
+        return BG_RED
       case "blue":
-        return styles.op_button_blue
-        break;
+        return BG_BLUE
       case "yellow":
-        return styles.op_button_yellow
-        break;
-      default: styles.op_button_red
-        break;
+        return BG_YELLOW
+      default:
+        return BG_RED
     }
   }
 
   return (
     <button
-      className={`${styles.op_button} ${getClsByMode()}`}
+      className={styles.op_button}
       style={props.styles}
     >
-      <div>{text}</div>
+      <div className={styles.op_button_bg}>
+        <Image src={getButtonBg()} alt="" width={142} height={50} layout="responsive" />
+      </div>
+      <div className={styles.op_button_text}>{text}</div>
       {subText && <span className={styles.op_button_sub_text}>{subText}</span>}
     </button>
   )

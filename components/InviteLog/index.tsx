@@ -3,6 +3,7 @@ import Image from "next/image";
 import LogButton from "../LogButton";
 import TDModal from "../TDModal";
 import LogTable from "./LogTable";
+import PNG_BG from "../../assets/modal-bg-2.png"
 import ICON_FRIENDS from "../../assets/friends.png";
 import styles from "./index.module.css";
 import OpButton from "../OpButton";
@@ -21,6 +22,11 @@ const InviteLog = () => {
             <TDModal
                 visible={visible}
                 onClose={() => setVisible(false)}
+                background={
+                    <div className={styles.invite_log_bg}>
+                        <Image src={PNG_BG} alt="" width={330} height={445} layout="responsive" />
+                    </div>
+                }
             >
                 <div className={styles.invite_log}>
                     <div className={styles.invite_log_progress}>
